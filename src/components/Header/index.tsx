@@ -1,22 +1,22 @@
-import React from 'react';
-import { NavBar, Container, Image, Wrapper } from './styles';
-import { ReactComponent as Logo } from './../../assets/logo.svg';
+import React from "react";
+import { NavBar, Container, Image, Wrapper } from "./styles";
+import { ReactComponent as Logo } from "./../../assets/logo.svg";
 
 const Header: React.FC = () => {
   return (
-  <>
-    <NavBar>
+    <>
+      <NavBar>
         <Wrapper>
-        <Container>
-          <Image>
-            <Logo></Logo>
-            <small>Busca de Ceps</small>
-          </Image>
-        </Container>
+          <Container>
+            <Image>
+              <Logo></Logo>
+              <small>Busca de Ceps</small>
+            </Image>
+          </Container>
         </Wrapper>
-    </NavBar>
-  </>
+      </NavBar>
+    </>
   );
-}
+};
 
 export default Header;

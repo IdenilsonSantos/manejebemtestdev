@@ -1,15 +1,19 @@
-import React, { useState } from 'react';
-import { Container, CardList, Place, DistrictName, StreetName, CityName } from './styles';
+import React from "react";
+import {
+  Container,
+  CardList,
+  Place,
+  DistrictName,
+  StreetName,
+  CityName,
+} from "./styles";
 
 interface PropsInterface {
-  data?: any
+  data?: any;
 }
 
-
-
 const ListPlace: React.FC<PropsInterface> = (props) => {
-  const { data } = props.data
-
+  const { data } = props.data;
 
   return (
     <>
@@ -20,10 +24,11 @@ const ListPlace: React.FC<PropsInterface> = (props) => {
               <>
                 <DistrictName>{data.bairro}</DistrictName>
                 <StreetName>{data.logradouro}</StreetName>
-                <CityName>{data.localidade} <strong>{data.uf}</strong></CityName>
+                <CityName>
+                  {data.localidade} <strong>{data.uf}</strong>
+                </CityName>
                 <small>Brasil</small>
-                </>
-
+              </>
             ) : (
               <h4>Por favor digite um cep</h4>
             )}
@@ -32,6 +37,6 @@ const ListPlace: React.FC<PropsInterface> = (props) => {
       </Container>
     </>
   );
-}
+};
 
 export default ListPlace;
