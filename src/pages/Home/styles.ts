@@ -3,7 +3,11 @@ import styled from 'styled-components'
 export const Wrapper = styled.div`
   width: 70%;
   margin: 0 auto;
+<<<<<<< HEAD
   padding-right: 50px;
+=======
+  padding: 0 10px 0 10px;
+>>>>>>> parent of 5666855 (fix: css style 2)
 `;
 
 export const Container = styled.div`
